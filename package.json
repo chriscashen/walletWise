@@ -1,0 +1,17 @@
+{
+  "name": "wallet-wise",
+  "source": "src/index.html",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "test": "jest",
+    "lint": "eslint",
+    "check": "tsc --noEmit",
+    "ci": "yarn build && yarn test && yarn lint && yarn check"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.1"
+  }
+}
